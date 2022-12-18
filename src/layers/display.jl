@@ -19,35 +19,35 @@ function _big_show(io::IO, obj, indent::Int=0, name=nothing)
         println(io, " "^indent, isnothing(name) ? "" : "$name = ", nameof(typeof(obj)), pre)
         if obj isa Chain{<:NamedTuple}
             for k in Base.keys(obj)
-                _big_show(io, obj.layers[k], indent + 4, k)
+                _big_show(io, obj.layers[k], indent + 2, k)
             end
         elseif obj isa Parallel{<:Any, <:NamedTuple}
             if obj.connection !== nothing
-                _big_show(io, obj.connection, indent + 4)
+                _big_show(io, obj.connection, indent + 2)
             end
             for k in Base.keys(obj)
-                _big_show(io, obj.layers[k], indent + 4, k)
+                _big_show(io, obj.layers[k], indent + 2, k)
             end
         elseif obj isa PairwiseFusion
-            _big_show(io, obj.connection, indent + 4)
+            _big_show(io, obj.connection, indent + 2)
             for k in Base.keys(obj)
-                _big_show(io, obj.layers[k], indent + 4, k)
+                _big_show(io, obj.layers[k], indent + 2, k)
             end
         elseif obj isa BranchLayer
             for k in Base.keys(obj)
-                _big_show(io, obj.layers[k], indent + 4, k)
+                _big_show(io, obj.layers[k], indent + 2, k)
             end
         elseif obj isa Maxout
             for k in Base.keys(obj)
-                _big_show(io, obj.layers[k], indent + 4, k)
+                _big_show(io, obj.layers[k], indent + 2, k)
             end
         elseif children isa NamedTuple
             for (k, c) in pairs(children)
-                _big_show(io, c, indent + 4, k)
+                _big_show(io, c, indent + 2, k)
             end
         else
             for c in children
-                _big_show(io, c, indent + 4)
+                _big_show(io, c, indent + 2)
             end
         end
         if indent == 0  # i.e. this is the outermost container

@@ -43,6 +43,9 @@ initialparameters(::AbstractRNG, ::AbstractExplicitLayer) = NamedTuple()
 function initialparameters(rng::AbstractRNG, l::NamedTuple)
     return map(Base.Fix1(initialparameters, rng), l)
 end
+function initialparameters(rng::AbstractRNG, l::Tuple)
+    return initialparameters(rng, NamedTuple{ntuple(i -> Symbol("layer_$i"), length(l))}(l))
+end
 
 """
     initialstates(rng::AbstractRNG, l)
@@ -51,6 +54,9 @@ Generate the initial states of the layer `l`.
 """
 initialstates(::AbstractRNG, ::AbstractExplicitLayer) = NamedTuple()
 initialstates(rng::AbstractRNG, l::NamedTuple) = map(Base.Fix1(initialstates, rng), l)
+function initialstates(rng::AbstractRNG, l::Tuple)
+    return initialstates(rng, NamedTuple{ntuple(i -> Symbol("layer_$i"), length(l))}(l))
+end
 
 """
     parameterlength(l)
