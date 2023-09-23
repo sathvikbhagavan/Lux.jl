@@ -22,13 +22,6 @@ using Lux, Random
 ```
 
 
-```
- Downloading artifact: CUDA_Driver
- Downloading artifact: CUDA_Runtime
-
-```
-
-
 Now let us control the randomness in our code using proper Pseudo Random Number Generator (PRNG)
 
 
