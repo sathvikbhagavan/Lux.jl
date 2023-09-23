@@ -48,7 +48,7 @@ Run JET tests on the function `f` with the arguments `args...`. If `JET` fails t
 
 All additional arguments will be forwarded to `@JET.test_call` and `@JET.test_opt`.
 
-::: note
+:::tip
 
 Instead of specifying `target_modules` with every call, you can set preferences for `target_modules` using `Preferences.jl`. For example, to set `target_modules` to `(Lux, LuxLib)` we can run:
 
@@ -96,9 +96,11 @@ Compare the gradients computed by Zygote.jl (Reverse Mode AD) against:
   * ForwardDiff.jl (Forward Mode AD)
   * FiniteDifferences.jl (Finite Differences)
 
-!!! tip
-    This function is completely compatible with Test.jl
+:::tip
 
+This function is completely compatible with Test.jl
+
+:::
 
 **Arguments**
 

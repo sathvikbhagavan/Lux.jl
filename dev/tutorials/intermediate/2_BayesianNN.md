@@ -188,8 +188,8 @@ Chains MCMC chain (5000×30×1 Array{Float64, 3}):
 Iterations        = 1:1:5000
 Number of chains  = 1
 Samples per chain = 5000
-Wall duration     = 60.49 seconds
-Compute duration  = 60.49 seconds
+Wall duration     = 60.62 seconds
+Compute duration  = 60.62 seconds
 parameters        = parameters[1], parameters[2], parameters[3], parameters[4], parameters[5], parameters[6], parameters[7], parameters[8], parameters[9], parameters[10], parameters[11], parameters[12], parameters[13], parameters[14], parameters[15], parameters[16], parameters[17], parameters[18], parameters[19], parameters[20]
 internals         = lp, n_steps, is_accept, acceptance_rate, log_density, hamiltonian_energy, hamiltonian_energy_error, numerical_error, step_size, nom_step_size
 
@@ -197,26 +197,26 @@ Summary Statistics
       parameters      mean       std      mcse   ess_bulk   ess_tail      rhat   ess_per_sec
           Symbol   Float64   Float64   Float64    Float64    Float64   Float64       Float64
 
-   parameters[1]   -2.0521    0.7625    0.1721    20.6080    90.3161    1.0078        0.3407
-   parameters[2]   -3.0083    3.1557    0.9621    12.7726    21.0999    1.5426        0.2111
-   parameters[3]    1.3245    0.8417    0.2430    13.3461    24.3246    1.4587        0.2206
-   parameters[4]   -1.4877    1.0772    0.2493    15.1287    26.2870    1.1494        0.2501
-   parameters[5]    0.7760    0.5463    0.1115    27.1685   102.1179    1.2247        0.4491
-   parameters[6]    3.4906    1.7171    0.4559    14.8031    45.0051    1.0628        0.2447
-   parameters[7]   -3.9710    1.4956    0.3945    15.0640    45.7012    1.1078        0.2490
-   parameters[8]   -3.4420    1.3931    0.3730    14.6316    21.0172    1.4495        0.2419
-   parameters[9]   -4.5405    3.0887    0.9352    12.0159    20.0739    1.6221        0.1986
-  parameters[10]   -3.2319    2.7507    0.8110    12.1252    22.4200    1.3478        0.2004
-  parameters[11]   -3.5758    1.4822    0.4076    13.6637    33.8975    1.1729        0.2259
-  parameters[12]   -1.0570    2.4954    0.7492    11.7223    21.0856    1.9121        0.1938
-  parameters[13]    2.9443    1.5863    0.4630    12.8882    20.7551    1.4709        0.2131
-  parameters[14]    1.7753    3.9004    1.1683    11.7170    20.8646    1.4595        0.1937
-  parameters[15]   -2.5492    0.9557    0.2088    22.5673    38.5675    1.1274        0.3731
-  parameters[16]    1.3716    2.0800    0.5691    14.0441    34.5833    1.1682        0.2322
-  parameters[17]   -0.4643    1.9644    0.5871    11.5634    21.2536    1.8976        0.1912
-  parameters[18]    1.1676    1.4714    0.3611    16.5438    23.5525    1.0044        0.2735
-  parameters[19]   -5.9863    0.9522    0.1526    38.9319    54.0819    1.0467        0.6436
-  parameters[20]   -1.7391    1.2860    0.2821    21.6130    50.2786    1.0414        0.3573
+   parameters[1]   -2.0521    0.7625    0.1721    20.6080    90.3161    1.0078        0.3399
+   parameters[2]   -3.0083    3.1557    0.9621    12.7726    21.0999    1.5426        0.2107
+   parameters[3]    1.3245    0.8417    0.2430    13.3461    24.3246    1.4587        0.2201
+   parameters[4]   -1.4877    1.0772    0.2493    15.1287    26.2870    1.1494        0.2495
+   parameters[5]    0.7760    0.5463    0.1115    27.1685   102.1179    1.2247        0.4481
+   parameters[6]    3.4906    1.7171    0.4559    14.8031    45.0051    1.0628        0.2442
+   parameters[7]   -3.9710    1.4956    0.3945    15.0640    45.7012    1.1078        0.2485
+   parameters[8]   -3.4420    1.3931    0.3730    14.6316    21.0172    1.4495        0.2413
+   parameters[9]   -4.5405    3.0887    0.9352    12.0159    20.0739    1.6221        0.1982
+  parameters[10]   -3.2319    2.7507    0.8110    12.1252    22.4200    1.3478        0.2000
+  parameters[11]   -3.5758    1.4822    0.4076    13.6637    33.8975    1.1729        0.2254
+  parameters[12]   -1.0570    2.4954    0.7492    11.7223    21.0856    1.9121        0.1934
+  parameters[13]    2.9443    1.5863    0.4630    12.8882    20.7551    1.4709        0.2126
+  parameters[14]    1.7753    3.9004    1.1683    11.7170    20.8646    1.4595        0.1933
+  parameters[15]   -2.5492    0.9557    0.2088    22.5673    38.5675    1.1274        0.3722
+  parameters[16]    1.3716    2.0800    0.5691    14.0441    34.5833    1.1682        0.2317
+  parameters[17]   -0.4643    1.9644    0.5871    11.5634    21.2536    1.8976        0.1907
+  parameters[18]    1.1676    1.4714    0.3611    16.5438    23.5525    1.0044        0.2729
+  parameters[19]   -5.9863    0.9522    0.1526    38.9319    54.0819    1.0467        0.6422
+  parameters[20]   -1.7391    1.2860    0.2821    21.6130    50.2786    1.0414        0.3565
 
 Quantiles
       parameters       2.5%     25.0%     50.0%     75.0%     97.5%

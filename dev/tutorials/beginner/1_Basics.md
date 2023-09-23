@@ -22,6 +22,13 @@ using Lux, Random
 ```
 
 
+```
+ Downloading artifact: CUDA_Driver
+ Downloading artifact: CUDA_Runtime
+
+```
+
+
 Now let us control the randomness in our code using proper Pseudo Random Number Generator (PRNG)
 
 
@@ -348,11 +355,11 @@ end
 
 ```
 5×3 CUDA.CuArray{Float32, 2, CUDA.Mem.DeviceBuffer}:
- 0.833518  0.223491  0.967811
- 0.681728  0.798997  0.588314
- 0.506485  0.467399  0.754429
- 0.663036  0.239756  0.710188
- 0.156884  0.27993   0.936583
+ 0.156884  0.0477006   0.936583
+ 0.223491  0.00936433  0.0797554
+ 0.798997  0.531904    0.696969
+ 0.467399  0.754429    0.247236
+ 0.24153   0.710188    0.80918
 ```
 
 
